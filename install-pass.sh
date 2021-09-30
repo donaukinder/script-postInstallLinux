@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 sudo apt update
-sudo apt install apache2 mysql-server php7.4 php-pear php-mbstring php-curl php-gd php-mysql zsh git curl -y
+sudo apt install apache2 mysql-server php7.4 php-pear php-mbstring php-curl php-gd php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl -y
 
 # Nodejs e npm
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install  nodejs yarn -y
 
 
 DIRETORIO_DOWNLOADS="/home/donaukinder/Downloads/programas"
@@ -25,6 +25,7 @@ sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 
 sudo apt install -f -y && sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 
+# ----------------------------- Composer ----------------------------- #
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
@@ -32,7 +33,6 @@ sudo mv composer.phar /usr/local/bin/composer
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
 ## Finalização, atualização e limpeza##
-sudo apt update && sudo apt upgrade -y
 sudo apt autoclean
 sudo apt autoremove -y
 # ---------------------------------------------------------------------- #
