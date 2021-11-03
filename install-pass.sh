@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
 sudo apt update
-sudo apt install apache2 mysql-server php7.4 php-pear php-mbstring php-curl php-gd php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl -y
+
+#PHP
+sudo apt install apache2 mariadb-server php7.4 php-pear php-mbstring php-curl php-gd php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl -y
 
 # Nodejs e npm
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt install  nodejs yarn -y
+sudo apt install  nodejs npm yarn -y
 
 
 DIRETORIO_DOWNLOADS="/home/donaukinder/Downloads/programas"
