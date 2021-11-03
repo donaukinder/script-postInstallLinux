@@ -3,7 +3,7 @@
 sudo apt update
 
 #PHP
-sudo apt install apache2 mariadb-server php7.4 php-pear php-mbstring php-curl php-gd zsh php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl snapd -y
+sudo apt install apache2 mariadb-server php7.4 php-pear php-mbstring php-curl php-gd zsh php-mysql git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl snapd -y
 
 # Nodejs e npm
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
