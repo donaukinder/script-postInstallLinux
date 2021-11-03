@@ -3,7 +3,7 @@
 sudo apt update
 
 #PHP
-sudo apt install apache2 mariadb-server php7.4 php-pear php-mbstring php-curl php-gd php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl snapd -y
+sudo apt install apache2 mariadb-server php7.4 php-pear php-mbstring php-curl php-gd zsh php-mysql zsh git curl git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev curl snapd -y
 
 # Nodejs e npm
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -40,3 +40,6 @@ sudo apt autoclean
 sudo apt autoremove -y
 # ---------------------------------------------------------------------- #
 
+#-------------------- oh my zsh ----------------------------------------#
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt-get install -y fonts-powerline
