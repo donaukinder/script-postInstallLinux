@@ -29,6 +29,7 @@ sudo apt install -f -y && sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 
 ## ------------------------ Dev --------------------------------------#
 sudo snap install code --classic
+sudo snap install insomnia
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service
 sudo snap connect mysql-workbench-community:ssh-keys
